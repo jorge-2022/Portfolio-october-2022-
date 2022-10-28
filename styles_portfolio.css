@@ -79,7 +79,7 @@ body {
     /* margin-right:30px */
 }
 
-h1 {
+h1, h2 {
     font-family: 'PT Serif', serif;
 }
 
@@ -126,6 +126,29 @@ h1 {
 #grid-container img {
     min-width: 100px;
     max-width: 200px;
+}
+
+#email-btn {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(56, 161, 253);
+    text-decoration: none;
+    min-width: 25vw;
+    width: 25vw;
+    max-width: 20vw;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+#contact h2, #contact p {
+    display: block;
+    width: 100%;
+}
+#contact {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
