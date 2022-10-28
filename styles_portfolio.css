@@ -87,7 +87,7 @@ body {
 #grid-container {
     display:grid;
     gap:5px;
-    background-color:darkslategray;
+    background-color:midnightblue;
     padding:5px;
     grid-template-areas: 
     'book1 book2'
@@ -96,6 +96,6 @@ body {
 }
 
 #grid-container > div {
-    background-color: lightgrey;
+    background-color: antiquewhite;
     padding:5px;    
 }
