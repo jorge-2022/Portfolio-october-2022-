@@ -109,7 +109,23 @@ h1 {
 
 #grid-container > div {
     background-color: antiquewhite;
-    padding:5px;    
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;    
+}
+
+#grid-container p, 
+#grid-container img {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+#grid-container img {
+    min-width: 100px;
+    max-width: 200px;
 }
 
 footer {
