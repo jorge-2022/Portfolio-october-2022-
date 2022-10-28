@@ -79,15 +79,21 @@ body {
     /* margin-right:30px */
 }
 
+h1 {
+    font-family: 'PT Serif', serif;
+}
+
 #content {
     border: 0.5px solid blue;
     margin-top: 150px;
-    left:0
+    left:0;
+    padding: 10px;
 }
 
 #intro {
     border: 0.5px solid blue;
     background-color: antiquewhite;
+    padding: 10px;
 }
 
 #grid-container {
