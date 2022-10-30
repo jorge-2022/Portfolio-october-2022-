@@ -1,0 +1,225 @@
+body {
+    background-image: url('./img/background_dessert.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*     background-size: 100% 100%; */
+    background-position: center -900px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.main-container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+#header {
+    width:100vw;
+    min-height: 70 px;
+    background:lightgray;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    overflow:hidden;
+    margin-right: 50px;
+    display:flex;
+    margin: 0px 
+}
+
+#nav-bar a {
+    color:black;
+    text-decoration: none;
+    padding:10px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#nav-bar a:hover {
+    color:white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo {
+    display:inline-flex;
+}
+
+#logo > img {
+/*     width: 100%;
+    height: 100%; */
+    max-height: 70px;
+    max-width: 130px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+/*     border: 0.5px solid black; */
+    margin-top: 2px;
+    display:flex
+  
+}
+
+
+#nav-bar {
+    border: 0.5px solid black;
+    overflow: hidden;
+    float:right;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 5px;
+    margin-right:70px;
+}
+
+#content {
+/*     border: 0.5px solid blue; */
+    margin-top: 150px;
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+#intro {
+/*     border: 0.5px solid blue; */
+    background-color: antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px
+}
+
+#books {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.book_cover {
+    height: 100%;
+    max-height: 200px;
+}
+
+
+
+#book1 { grid-area: a; }
+#book2 { grid-area: b; }
+#book3 { grid-area: c; }
+#book4 { grid-area: d; }
+#book5 { grid-area: e; }
+#book6 { grid-area: f; }
+
+
+#grid-container {
+    display:grid;
+    gap:5px;
+    background-color:midnightblue;
+    padding:5px;
+    grid-template-areas: 
+    'a b'
+    'c d'
+    'e f';
+    margin-top: 10px;
+    /* La linea de abajo es para que las columnas
+    tengan el mismo ancho*/ 
+    grid-auto-columns: 1fr;    
+}
+
+#grid-container > div {
+    background-color: antiquewhite;
+    padding:15px;    
+}
+
+
+
+
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size:inherit;  
+    border: none;
+    outline: none;  
+    background-color: lightgray;
+/*     background-color: red; */
+    font-family: inherit;
+    margin: 0;
+    padding:10px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: lightgray;
+/*     background-color: yellow; */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #nav-bar .dropdown-content a {
+    float: none;
+    color:black;
+/*     color: green; */
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  #nav-bar .dropdown-content a:hover {
+    color:white;
+    background-color: black;
+/*     background-color: blue; */
+  }
+  
+  #nav-bar button:hover{
+    color:white;
+    background-color: black;
+  }
+
+  #nav-bar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+#contact {
+    /* ¿Por que declara como "flex" si es que luego
+    "h2", "p" y el boton seran display:block ? */
+    display: flex;
+    flex-wrap: wrap;
+    background-color:antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+#contact h2, #contact p {
+    display: block;
+    width: 100%;
+}
+#email-btn {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(56, 161, 253);
+    text-decoration: none;
+    min-width: 25vw;
+    width: 25vw;
+    max-width: 20vw;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: lightgray;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    bottom: 0;
+}
