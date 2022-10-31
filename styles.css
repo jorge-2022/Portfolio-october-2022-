@@ -140,10 +140,22 @@ body {
     margin-top: 10px;
     /* La linea de abajo es para que las columnas
     tengan el mismo ancho*/ 
-    grid-auto-columns: 1fr;    
+    grid-auto-columns: 1fr;
+        
 }
+#book1, #book2, #book3, #book4, #book5, #book6 {
+    
+    /* display:flex; */
+    justify-content: center;
+} 
 
-  
+#book1 h3, #book1 p , #book1 img {
+    display:block;
+    margin:5px auto;
+
+    text-align: center;
+
+}
 
 #grid-container > div {
     background-color: antiquewhite;
