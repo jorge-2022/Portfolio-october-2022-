@@ -1,3 +1,9 @@
+@font-face {
+    font-family:dune-rise;
+    src: url(./fonts/dune_rise.ttf)
+
+}
+
 body {
     background-image: url('./img/background_dessert.jpg');
     background-repeat: no-repeat;
@@ -29,22 +35,6 @@ body {
     margin: 0px 
 }
 
-#nav-bar a {
-    color:black;
-    text-decoration: none;
-    padding:10px;
-    font-weight: bold;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-#nav-bar a:hover {
-    color:white;
-    background-color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 #logo {
     display:inline-flex;
 }
@@ -65,7 +55,7 @@ body {
 
 
 #nav-bar {
-    border: 0.5px solid black;
+/*     border: 0.5px solid black; */
     overflow: hidden;
     float:right;
     display: inline-flex;
@@ -75,19 +65,38 @@ body {
     margin-right:70px;
 }
 
-#content {
-/*     border: 0.5px solid blue; */
-    margin-top: 150px;
-    background-color: antiquewhite;
-    padding: 15px;
+#nav-bar a {
+    color:black;
+    text-decoration: none;
+    padding:9px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
-#intro {
-/*     border: 0.5px solid blue; */
+#nav-bar a:hover {
+    color:white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#content  {
+    margin-top: 150px;
     background-color: antiquewhite;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 15px
+    padding: 5px;
+
+}
+
+#content h1 {
+    font-family: 'dune-rise', 'Open Sans';
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    }
+
+.cite {
+    text-align: right;
 }
 
 #books {
@@ -98,9 +107,18 @@ body {
     height: 100%;
     max-height: 200px;
 }
+#dune-books h2 {
+    display:block;
+    background-color: antiquewhite;
+/*     border: 0.5px solid black;  */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'dune-rise', 'Open Sans';
+    }
 
 
-
+#dune-books { grid-area: t;}
 #book1 { grid-area: a; }
 #book2 { grid-area: b; }
 #book3 { grid-area: c; }
@@ -111,10 +129,11 @@ body {
 
 #grid-container {
     display:grid;
-    gap:5px;
+    gap: 5px;
     background-color:midnightblue;
     padding:5px;
-    grid-template-areas: 
+    grid-template-areas:
+    't t'
     'a b'
     'c d'
     'e f';
@@ -123,6 +142,8 @@ body {
     tengan el mismo ancho*/ 
     grid-auto-columns: 1fr;    
 }
+
+  
 
 #grid-container > div {
     background-color: antiquewhite;
@@ -222,4 +243,20 @@ footer {
     padding: 15px;
     margin: 0;
     bottom: 0;
+}
+
+
+footer a {
+    display:inline-flex;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+/*     border: 0.5px solid black; */
+}
+footer a:hover {
+    color:white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
