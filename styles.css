@@ -143,13 +143,13 @@ body {
     grid-auto-columns: 1fr;
         
 }
-#book1, #book2, #book3, #book4, #book5, #book6 {
+.books {
     
     /* display:flex; */
     justify-content: center;
 } 
 
-#book1 h3, #book1 p , #book1 img {
+.books h3, .books p , .books img {
     display:block;
     margin:5px auto;
 
@@ -207,7 +207,7 @@ body {
   #nav-bar .dropdown-content a:hover {
     color:white;
     background-color: black;
-/*     background-color: blue; */
+/*  background-color: blue; */
   }
   
   #nav-bar button:hover{
